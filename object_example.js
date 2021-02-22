@@ -1,12 +1,13 @@
-function buildPlanet(name, size, isHabitable) {
+function buildPlanet(name, radius, isHabitable) {
     return {
       name,
-      size,
+      radius,
       isHabitable,
     };
   }
 
 let earth = buildPlanet("Earth", "6371 km", true)
+let mars = buildPlanet("Mars", "3389.5 km", false)
 
 if (earth.isHabitable) {
     for(key in earth){
@@ -24,3 +25,9 @@ console.log(earthClone);
 
 console.log(earth == earthClone)
 console.log(earth === earthClone)
+
+// Clone object using spread operator
+let marsClone = {...mars};
+console.log(marsClone);
+console.log({...mars});
+console.log(mars === marsClone)
