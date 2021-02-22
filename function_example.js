@@ -42,4 +42,4 @@ let calAge  = (dateString) => {
     return age;
 };
 
-console.log(getAge("1995-09-06"))
+console.log(calAge("1995-09-06"))
