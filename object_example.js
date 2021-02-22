@@ -12,4 +12,15 @@ if (earth.isHabitable) {
     for(key in earth){
         console.log(`${key}=>${earth[key]}`);
     }
-}   
+}
+
+// Clone an  object into new object variable
+
+let earthClone = {};
+
+Object.assign(earthClone, earth)
+
+console.log(earthClone);
+
+console.log(earth == earthClone)
+console.log(earth === earthClone)
